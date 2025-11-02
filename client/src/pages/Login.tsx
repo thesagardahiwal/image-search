@@ -45,11 +45,11 @@ export const Login: React.FC = () => {
   const OAuthButton = ({
     provider,
     icon: Icon,
-    gradient,
+    linear,
   }: {
     provider: string;
     icon: React.ElementType;
-    gradient: string;
+    linear: string;
   }) => (
     <Button
       disabled={loading}
@@ -60,7 +60,7 @@ export const Login: React.FC = () => {
         text-white font-medium text-base 
         transition-all duration-300 
         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/20
-        ${gradient} hover:brightness-110 hover:scale-[1.02]
+        ${linear} hover:brightness-110 hover:scale-[1.02]
       `}
     >
       <Icon className="w-5 h-5" />
@@ -69,7 +69,7 @@ export const Login: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-slate-950 via-indigo-950 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
       {/* Animated Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-20 -left-20 w-96 h-96 bg-indigo-500/30 rounded-full blur-[120px] animate-pulse" />
@@ -80,7 +80,7 @@ export const Login: React.FC = () => {
         <Card className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl overflow-hidden">
           {/* Header Section */}
           <CardHeader className="text-center space-y-3 py-8">
-            <div className="w-20 h-20 mx-auto bg-gradient-to-tr from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <div className="w-20 h-20 mx-auto bg-linear-to-tr from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
               <span className="text-4xl text-white drop-shadow-md">🔍</span>
             </div>
             <CardTitle className="text-3xl font-bold text-white tracking-tight">
@@ -119,17 +119,17 @@ export const Login: React.FC = () => {
               <OAuthButton
                 provider="Google"
                 icon={Mail}
-                gradient="bg-gradient-to-r from-red-500 to-orange-500"
+                linear="bg-linear-to-r from-red-500 to-orange-500"
               />
               <OAuthButton
                 provider="Facebook"
                 icon={Facebook}
-                gradient="bg-gradient-to-r from-blue-600 to-indigo-600"
+                linear="bg-linear-to-r from-blue-600 to-indigo-600"
               />
               <OAuthButton
                 provider="GitHub"
                 icon={Github}
-                gradient="bg-gradient-to-r from-gray-800 to-black"
+                linear="bg-linear-to-r from-gray-800 to-black"
               />
             </div>
 

@@ -5,8 +5,7 @@ import { SearchBar } from '../components/search/SearchBar';
 import { ImageGrid } from '../components/search/ImageGrid';
 import { SelectionCounter } from '../components/search/SelectionCounter';
 import { SearchHistory } from '../components/history/SearchHistory';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
-import { EmptyState } from '../components/common/EmptyState';
+import { Card, CardContent } from '../components/ui/Card';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
 import { TopSearches } from '../components/common/TopSearches';
 
