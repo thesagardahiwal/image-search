@@ -173,3 +173,6 @@ if (hasValidEnv && process.env.GITHUB_CLIENT_ID && process.env.GITHUB_CLIENT_SEC
 }
 
 console.log('✅ Passport configuration completed');
+
+
+export default passport;

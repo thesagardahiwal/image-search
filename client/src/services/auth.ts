@@ -13,6 +13,7 @@ export const authService = {
   async initiateOAuth(provider: string): Promise<{ redirectUrl: string }> {
     // For OAuth, we need to redirect to the backend OAuth endpoint
     // The backend will handle the OAuth flow and redirect back to our app
+    
     return { redirectUrl: `/api/auth/${provider}` };
   },
 

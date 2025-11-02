@@ -64,25 +64,25 @@ export const SearchHistory: React.FC<SearchHistoryProps> = ({
   }
 
   return (
-    <Card>
+    <Card className='border bg-white rounded-lg border-gray-700'>
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <History className="w-5 h-5" />
             <span>Search History</span>
           </div>
-          <Button
+          {/* <Button
             variant="ghost"
             size="sm"
             icon={Trash2}
-            className="text-gray-500 hover:text-red-600"
+            className="text-gray-500 flex items-center justify-center hover:text-red-600"
           >
             Clear
-          </Button>
+          </Button> */}
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="space-y-3 max-h-96 overflow-y-auto scrollbar-thin">
+        <div className="space-y-3 max-h-96 overflow-y-auto scroll-smooth scrollbar-thin">
           {history.map((item) => (
             <div
               key={item._id}
@@ -106,7 +106,7 @@ export const SearchHistory: React.FC<SearchHistoryProps> = ({
                 size="sm"
                 icon={Search}
                 onClick={() => onSearchClick?.(item.term)}
-                className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-gray-500 hover:text-primary-600"
+                className="opacity-0 flex items-center justify-center group-hover:opacity-100 transition-opacity duration-200 text-gray-500 hover:text-primary-600"
               >
                 Search
               </Button>

@@ -1,6 +1,5 @@
 import express from 'express';
 import session from 'express-session';
-import passport from 'passport';
 import cors from 'cors';
 import {config, configDotenv} from 'dotenv';
 
@@ -10,7 +9,7 @@ configDotenv();
 
 // Now import other modules
 import { connectDB } from './config/database.js';
-import './config/passport.js';
+import passport from './config/passport.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
 // Routes
@@ -25,7 +24,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: process.env.CLIENT_URL || 'http://localhost:5173',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']

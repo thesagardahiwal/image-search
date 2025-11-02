@@ -41,8 +41,8 @@ export const Button: React.FC<ButtonProps> = ({
       {loading && (
         <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin mr-2" />
       )}
-      {Icon && !loading && <Icon className="w-4 h-4 mr-2" />}
-      {children}
+        {Icon && !loading && <Icon className="w-4 h-4 mr-2" />}
+        {children}
     </button>
   );
 };

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider } from './context/AuthContext';
 import { SearchProvider } from './context/SearchContext';
 import { Navbar } from './components/layout/Navbar';
-import { TopSearches } from './components/common/TopSearches';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { PageLoader } from './components/ui/LoadingSpinner';
@@ -31,9 +30,8 @@ const App: React.FC = () => {
     <Router>
       <AuthProvider>
         <SearchProvider>
-          <div className="min-h-screen bg-gray-50">
+          <div className="min-h-screen bg-gray-900">
             <Navbar />
-            <TopSearches topSearches={[]} />
             <AppRoutes />
           </div>
         </SearchProvider>

@@ -1,8 +1,7 @@
 import axios from 'axios';
-import { type ApiResponse } from '../types';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'http://localhost:8000/api',
   withCredentials: true,
   timeout: 10000,
 });
