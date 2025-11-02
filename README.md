@@ -431,6 +431,8 @@ Built with ❤️ using the MERN Stack
 <img width="1439" height="811" alt="Screenshot 2025-11-02 at 4 46 17 PM" src="https://github.com/user-attachments/assets/cdf22b81-2881-41f7-8f8b-6aacccd168a6" />
 <img width="1439" height="811" alt="Screenshot 2025-11-02 at 4 46 45 PM" src="https://github.com/user-attachments/assets/be25f391-7bcd-4ff4-beb0-f277ad6dd659" />
 <img width="1439" height="811" alt="Screenshot 2025-11-02 at 4 47 03 PM" src="https://github.com/user-attachments/assets/09a45710-7d76-4cbf-bdf0-e175f8da9185" />
+<video src="https://github.com/user-attachments/assets/b64fe79e-a226-4ec0-88b9-a108a4be29c3" width="1000" height="780" alt="Demo Video"/>
+
 
 
 
