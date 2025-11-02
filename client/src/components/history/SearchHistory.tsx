@@ -1,5 +1,5 @@
 import React from 'react';
-import { History, Search, Trash2 } from 'lucide-react';
+import { History, Search } from 'lucide-react';
 import type { SearchHistory as SearchHistoryType } from '../../types';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/Card';
 import { Button } from '../ui/Button';

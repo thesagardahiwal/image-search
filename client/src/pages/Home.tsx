@@ -18,7 +18,6 @@ export const Home: React.FC = () => {
     selectedImages,
     loading,
     searchHistory,
-    topSearches,
     searchImages,
     toggleImageSelection,
     clearSelection,

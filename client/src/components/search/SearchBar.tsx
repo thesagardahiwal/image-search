@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, TrendingUp, Clock, Sparkles, Menu } from 'lucide-react';
+import { Search, X, TrendingUp, Clock, Sparkles } from 'lucide-react';
 import { Input } from '../ui/Input';
 import { useSearch } from '../../hooks/useSearch';
-import { useDebounce } from '../../hooks/useDebounce';
 import { Button } from '../ui/Button';
 
 
@@ -24,7 +23,6 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   const [showTrending, setShowTrending] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const { searchHistory, topSearches } = useSearch();
-  const debouncedSearchTerm = useDebounce(searchTerm, 300);
   const inputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
